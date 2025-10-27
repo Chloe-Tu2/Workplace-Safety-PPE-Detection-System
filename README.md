@@ -1,49 +1,65 @@
-# CV_Project_Fall_2025
-# CV_Project_Fall_2025: [Your Project Name Here]
+# Workplace Safety PPE Detection System
 
-**Team Members:**
-* [Your Name / Team Lead]
-* [Teammate Name 1]
-* [Teammate Name 2]
+## Team Members
+- DeMarcus Crump 
+- Chloe Tu 
 
----
+## Project Tier
+**Tier 2**: Multi-class object detection with compliance logic for PPE verification, real-time inference capabilities, and integration of multiple detection classes for comprehensive workplace safety monitoring.
 
-## 💡 Midterm Project Proposal: [Tier 1, 2, or 3]
+## Problem Statement
+Construction workers and warehouse employees face significant occupational hazards - non-compliance with Personal Protective Equipment (PPE) requirements leads to preventable injuries and deaths. Current workplace safety monitoring relies on manual observation and periodic inspections, which are inconsistent, error-prone, and cannot monitor all workers simultaneously.
 
-*This is the official project proposal, serving as the required documentation for the midterm submission.*
+## Solution Overview
+We're building a real-time computer vision system that detects PPE on workers, automatically verifies compliance, and generates alerts for violations. The system uses YOLOv8 to identify PPE items (helmets, vests, masks) and workers in workplace cameras, applies rule-based compliance checking, and outputs annotated images with safety status.
 
-### The Problem
-[2-3 sentences describing the real-world problem you're solving.]
+## Technical Approach
+- **CV Technique:** Object Detection (Multi-class detection of PPE items and workers)
+- **Model:** YOLOv8 (You Only Look Once, version 8)
+- **Framework:** PyTorch + Ultralytics YOLO Library
+- **Why this approach:** Real-time PPE detection requires fast inference (30+ FPS), high accuracy (90%+ mAP), and multi-class capability. YOLOv8 balances speed and accuracy perfectly for workplace safety applications.
 
-**Who Cares:** [e.g., Warehouse managers, farmers, doctors]
-**Why Important:** [e.g., Saves $X in labor, increases accuracy by Y%]
+## Dataset
+- **Source:** [Construction Site Safety Image Dataset Roboflow](https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow)
+- **Size:** 2801 images (2605 training, 114 validation, 82 test)
+- **Labels:** Hardhat, NO-Hardhat, Safety Vest, NO-Safety Vest, Mask, NO-Mask, Person, Gloves (~10 classes)
+- **Link:** https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow
 
-### The Solution
-[1-2 sentences describing your system and what it will do to solve the problem.]
+## Success Metrics
+- **Primary Metric:** mAP@50 (Detection Accuracy)
+- **Target:** ≥75% mAP
+- **Secondary Metrics:** Precision ≥85%, Recall ≥75%, Inference Speed <100ms per image (CPU)
 
-### Technical Approach
-* **CV Technique:** [Object Detection / Classification / Segmentation / VLM/etc.]
-* **Model:** [YOLOV8 / ResNet50 / CLIP/etc.]
-* **Framework:** [PyTorch / TensorFlow / Hugging Face]
-* **Why this approach:** [1-2 sentences explaining your model choice.]
+## Week-by-Week Plan
+- **Week 10:** Download dataset, set up Google Colab environment, explore data, create GitHub repo
+- **Week 11:** Train YOLOv8 model on PPE dataset - achieve ≥70% mAP
+- **Week 12:** Evaluate model, improve accuracy with augmentation - reach ≥75% mAP
+- **Week 13:** Build compliance logic, create demo with visual overlays - functional end-to-end system
+- **Week 14:** Record demo video, final testing, complete documentation
+- **Week 15:** Present final project with live/recorded demo
 
-### Dataset
-* **Source:** [COCO / Custom / Roboflow / etc.]
-* **Size:** [Number of images/videos]
-* **Labels:** [What you're detecting/classifying]
-* **Link:** https://www.atltranslate.com/ai/blog/where-to-find-public-data-sets
+## Resources Needed
+- **Compute:** Google Colab (Free GPU)
+- **Cost:** $0 (all free resources)
+- **APIs:** None required (direct dataset download from Kaggle)
 
-### Success Metrics
-* **Primary Metric:** [Accuracy / mAP / F1-score / etc.]
-* **Target:** [e.g., "90% accuracy" or "mAP50 > 0.7"]
-* **Secondary Metrics:** [Speed (FPS), Inference Latency, etc.]
+## Risks & Mitigation
 
----
+| Risk | Probability | Mitigation |
+|------|-------------|------------|
+| Low accuracy (<75% mAP) | Medium | Apply aggressive augmentation, try YOLOv8-medium variant, fine-tune on hard examples |
+| Class imbalance | Medium | Use weighted loss functions, class-specific augmentation |
+| Occluded PPE | Medium | Train on augmented occlusion patterns, adjust detection thresholds |
+| Slow inference on CPU | Low | Use YOLOv8-nano for speed, apply quantization |
+| Demo technical failure | Low | Record backup demo video, prepare static image fallback |
 
-## ⚙️ Getting Started & Project Structure
+## AI Usage Log
+**Status:** Will be updated throughout Weeks 11-15 as AI tools are used.
 
-1.  **Clone the repository:** `git clone [Your Repository URL]`
-2.  **Install dependencies:** `pip install -r requirements.txt`
-3.  **Explore the data:** See the notebook in `notebooks/` for initial exploration.
-
-*The full week-by-week plan and risk mitigation is detailed in the presentation slides: `docs/proposal.pdf`.*
+## Current Status
+- [x] Repository created
+- [x] Proposal written
+- [x] Dataset acquired
+- [ ] Model training started
+- [ ] Demo created
+- [ ] Final presentation ready
