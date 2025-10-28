@@ -113,7 +113,7 @@ Real-Time Alerts for Violations
 
 ### Source
 
-**Dataset:** [Construction Site Safety Image Dataset](https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow) (Kaggle)
+**Dataset (Kaggle):** [Construction Site Safety Image Dataset](https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow) 
 
 ### Size
 
