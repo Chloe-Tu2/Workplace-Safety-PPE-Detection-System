@@ -1,5 +1,5 @@
 # Workplace Safety PPE Detection System
-## Midterm Presentation (ITAI 1378)
+## Midterm Presentation (ITAI 1378): Comp Vision-Artificial Intel
 
 **Team:** DeMarcus Crump, Chloe Tu  
 **Date:** October 30, 2025
