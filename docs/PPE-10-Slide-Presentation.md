@@ -274,7 +274,7 @@ Real-Time Alerts for Violations
 | **Dataset** | Kaggle (direct download) | $0 |
 | **APIs** | Kaggle API (optional), Ultralytics HUB (optional) | $0 (free tiers) |
 | **Storage** | Google Drive (15GB free), Colab storage | $0 |
-| **Code Repository** | GitHub (public repo) | $0 |
+| **Code Repository** | GitHub (private repo) | $0 |
 
 ### Software Stack:
 
