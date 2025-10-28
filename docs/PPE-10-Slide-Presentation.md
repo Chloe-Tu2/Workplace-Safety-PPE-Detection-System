@@ -1,5 +1,5 @@
 # Workplace Safety PPE Detection System
-## Midterm Presentation (ITAI 1378) – Exactly 10 Slides
+## Midterm Presentation (ITAI 1378)
 
 **Team:** DeMarcus Crump, Chloe Tu  
 **Date:** October 30, 2025
