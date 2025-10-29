@@ -12,6 +12,7 @@
 - Chloe Tu
 
 **Project Tier:** Tier 2
+
 **Date:** October 30, 2025
 
 ---
