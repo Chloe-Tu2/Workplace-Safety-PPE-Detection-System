@@ -60,6 +60,6 @@ We're building a real-time computer vision system that detects PPE on workers, a
 - [x] Repository created
 - [x] Proposal written
 - [x] Dataset acquired
-- [ ] Model training started
-- [ ] Demo created
+- [x] Model training started
+- [x] Demo created
 - [ ] Final presentation ready
