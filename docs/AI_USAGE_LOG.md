@@ -80,7 +80,7 @@ Why we chose it:
 
 ### 3. Understanding Dataset Splits
 
-**Date**: November 4, 2025 | **Tool**: ChatGPT-4
+**Date**: October 28, 2025 | **Tool**: ChatGPT-4
 
 **Our Question:**
 > "The dataset is already split, but the ratio seems off. Can we re-split it? Will that affect accuracy?"
@@ -107,7 +107,7 @@ The original split wasn't ideal (not stratified, uneven distribution). We wanted
 
 ### 4. Setting Up Kaggle API & Google Colab
 
-**Date**: October 19, 2025 | **Tool**: ChatGPT-4 + GitHub Copilot
+**Date**: October 29, 2025 | **Tool**: ChatGPT-4 + GitHub Copilot
 
 **Our Questions:**
 > "How do we download Kaggle datasets in Google Colab?"  
@@ -141,7 +141,7 @@ We needed to download our dataset into Colab but didn't know the workflow.
 
 ### 5. Google Drive Persistence Issue
 
-**Date**: October 20, 2025 | **Tool**: Claude
+**Date**: November 4, 2025 | **Tool**: Claude
 
 **Problem We Discovered:**
 After closing Colab and reopening, our dataset was gone! Everything in `/content/` disappeared.
@@ -180,7 +180,7 @@ Updated all paths to:
 
 ### 6. Choosing YOLO Model Version
 
-**Date**: October 22, 2025 | **Tool**: ChatGPT-4
+**Date**: November 7, 2025 | **Tool**: ChatGPT-4
 
 **Our Question:**
 > "Which YOLO model should we use? What's the difference between YOLOv8n, s, m, l, x?"
@@ -212,7 +212,7 @@ Trade-offs:
 
 ### 7. Understanding Training Hyperparameters
 
-**Date**: October 25, 2025 | **Tool**: ChatGPT-4
+**Date**: November 10, 2025 | **Tool**: ChatGPT-4
 
 **Our Question:**
 > "What do all these training parameters mean? epochs, batch, lr0, patience, etc.?"
@@ -242,7 +242,7 @@ Key parameters:
 
 ### 8. Debugging: Results Mismatch
 
-**Date**: November 8, 2025 | **Tool**: GitHub Copilot
+**Date**: November 14, 2025 | **Tool**: GitHub Copilot
 
 **Critical Problem:**
 We trained YOLOv8s for 200 epochs and got 80.5% mAP@50. But Notebook 2 was showing 71% and 3M parameters (YOLOv8n) instead of 11M!
@@ -280,7 +280,7 @@ best_model = YOLO(f'{latest_run}/weights/best.pt')
 
 ### 9. Code Generation for Visualizations
 
-**Date**: October 28, 2025 | **Tool**: GitHub Copilot
+**Date**: November 18, 2025 | **Tool**: GitHub Copilot
 
 **Our Question:**
 > "How do I create visualizations showing detection results with bounding boxes and labels?"
@@ -313,7 +313,7 @@ Visualization is a utility function, not the main learning goal. We focused our 
 
 ### 10. Understanding Evaluation Metrics
 
-**Date**: November 3, 2025 | **Tool**: ChatGPT-4
+**Date**: November 25, 2025 | **Tool**: ChatGPT-4
 
 **Our Question:**
 > "What's the difference between mAP@50 and mAP@50-95? Which one should we care about?"
