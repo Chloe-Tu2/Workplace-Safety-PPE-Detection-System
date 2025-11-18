@@ -17,7 +17,7 @@ This log documents how we used AI tools (ChatGPT-4, Claude, GitHub Copilot) thro
 
 ### 1. Researching Real-World CV Applications
 
-**Date**: October 15, 2025 | **Tool**: ChatGPT-4
+**Date**: October 21, 2025 | **Tool**: ChatGPT-4
 
 **Our Question:**
 > "What are real-world problems that can be solved with computer vision?"
@@ -41,7 +41,7 @@ Listed several applications: healthcare (disease detection), manufacturing (defe
 
 ### 2. Finding the Right Dataset
 
-**Date**: October 17, 2025 | **Tool**: ChatGPT-4
+**Date**: October 23, 2025 | **Tool**: ChatGPT-4
 
 **Our Question:**
 > "Where can we find construction site PPE datasets for YOLO?"
@@ -80,7 +80,7 @@ Why we chose it:
 
 ### 3. Understanding Dataset Splits
 
-**Date**: October 18, 2025 | **Tool**: ChatGPT-4
+**Date**: November 4, 2025 | **Tool**: ChatGPT-4
 
 **Our Question:**
 > "The dataset is already split, but the ratio seems off. Can we re-split it? Will that affect accuracy?"
