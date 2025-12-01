@@ -172,7 +172,7 @@ For complete dataset documentation, see [data/README.md](data/README.md).
 ## Repository Structure
 
 ```
-PPE /
+PPE/
 ├── README.md                       # Main project documentation
 ├── requirements.txt                # Python dependencies
 ├── .gitignore                      # Git exclusions
@@ -223,7 +223,9 @@ PPE /
 │
 └── docs/                           # Documentation
     ├── AI_USAGE_LOG.md             # Detailed AI assistance log
-    └── PPE-10-Slide-Presentation (1).md  # Presentation slides
+    └── MD_DemarcusCrump_ChloeTu-ITAI1378.pdf  # Midterm sildes PDF version
+    ├── MD_DemarcusCrump_ChloeTu-ITAI1378.pptx # Midterm sildes Powerpoint pptx version
+    └── PPE-10-Slide-Presentation-Text.md  # Text word format Presentation slides
 ```
 
 **Note**: Large files (full dataset, model weights) are excluded from this repository via `.gitignore`. Download instructions provided in respective README files.
