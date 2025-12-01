@@ -202,7 +202,6 @@ PPE/
 │   ├── pretrained/                 # Base models (excluded from repo)
 │   │   └── .gitkeep
 │   └── trained/                    # Trained checkpoints (excluded from repo)
-│       ├── .gitkeep
 │       └── best.pt                 # Best model (21.4 MB, excluded)
 │
 ├── results/                        # Training outputs & visualizations
