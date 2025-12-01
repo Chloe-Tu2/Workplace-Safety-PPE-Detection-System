@@ -172,7 +172,7 @@ For complete dataset documentation, see [data/README.md](data/README.md).
 ## Repository Structure
 
 ```
-PPE 2/
+PPE /
 ├── README.md                       # Main project documentation
 ├── requirements.txt                # Python dependencies
 ├── .gitignore                      # Git exclusions
@@ -471,7 +471,7 @@ This project is for educational purposes as part of ITAI 1378 Final Project.
 
 **Course**:
 - Professor [Name] - ITAI 1378: Computer Vision
-- Texas State University - Fall 2025
+- Houston City College - Fall 2025
 
 **AI Tools**:
 - OpenAI ChatGPT-4 for research and debugging assistance
@@ -482,4 +482,4 @@ This project is for educational purposes as part of ITAI 1378 Final Project.
 
 **Course**: ITAI 1378 - Final Project  
 **Semester**: Fall 2025  
-**Institution**: Texas State University
+**Institution**: Houston City College 
