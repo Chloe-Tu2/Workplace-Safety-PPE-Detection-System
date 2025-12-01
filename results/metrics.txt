@@ -118,4 +118,3 @@ Export Formats Available: PyTorch (.pt), ONNX, TorchScript, TFLite
 Deployment Options: Real-time video, batch processing, API service, mobile/edge
 
 ============================================
-Generated: November 12, 2025
