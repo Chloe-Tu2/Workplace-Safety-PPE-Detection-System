@@ -494,13 +494,13 @@ While the model performs well overall, it occasionally struggles with:
 
 ## Key Features
 
-✅ Stratified train/val/test split (70/15/15)  
-✅ Advanced data augmentation (mixup, copy-paste)  
-✅ Dynamic model checkpoint loading  
-✅ Comprehensive evaluation metrics  
-✅ Real-time inference demo  
-✅ Multi-format model export (ONNX, TorchScript, TFLite)  
-✅ **BONUS**: External image testing for generalization evaluation
+✓  Stratified train/val/test split (70/15/15)  
+✓  Advanced data augmentation (mixup, copy-paste)  
+✓  Dynamic model checkpoint loading  
+✓  Comprehensive evaluation metrics  
+✓  Real-time inference demo  
+✓  Multi-format model export (ONNX, TorchScript, TFLite)  
+✓  **BONUS**: External image testing for generalization evaluation
 
 ## Training Configuration
 
