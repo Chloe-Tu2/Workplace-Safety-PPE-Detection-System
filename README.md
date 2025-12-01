@@ -230,7 +230,9 @@ PPE 2/
 │
 └── docs/                           # Documentation
     ├── AI_USAGE_LOG.md             # Detailed AI assistance log
-    └── PPE-10-Slide-Presentation (1).md  # Presentation slides
+    └── MD_DemarcusCrump_ChloeTu-ITAI1378.pdf  # Midterm sildes PDF version
+    ├── MD_DemarcusCrump_ChloeTu-ITAI1378.pptx # Midterm sildes Powerpoint pptx version
+    └── PPE-10-Slide-Presentation-Text.md  # Text word format Presentation slides
 ```
 
 **Note**: Large files (full dataset, model weights) are excluded from this repository via `.gitignore`. Download instructions provided in respective README files.
@@ -605,8 +607,8 @@ This project is for educational purposes as part of ITAI 1378 Final Project.
 - PyTorch for deep learning infrastructure
 
 **Course**:
-- Professor [Name] - ITAI 1378: Computer Vision
-- Texas State University - Fall 2025
+- Professor [Patricia McManus] - ITAI 1378: Computer Vision
+- Houston City College - Fall 2025
 
 **AI Tools**:
 - OpenAI ChatGPT-4 for research and debugging assistance
@@ -617,4 +619,4 @@ This project is for educational purposes as part of ITAI 1378 Final Project.
 
 **Course**: ITAI 1378 - Final Project  
 **Semester**: Fall 2025  
-**Institution**: Texas State University
+**Institution**: Houston City College
