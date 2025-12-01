@@ -253,8 +253,8 @@ Workplace-Safety-PPE-Detection-System/
 - **Dataset**: [Construction Site Safety (Roboflow)](https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow)
 - **Size**: 2,801 images with YOLO format annotations
 - **Classes**: 10 (Hardhat, NO-Hardhat, Safety Vest, NO-Safety Vest, Mask, NO-Mask, Person, Safety Cone, Machinery, Vehicle)
-
 **Note**: Full dataset is NOT included in this repo due to size. Download from Kaggle using their API or manually.
+  
 ---
 
 ### Option A: Run Demo Only (Fastest - 5 minutes)
