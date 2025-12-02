@@ -1,25 +1,27 @@
-# Project Notebooks & Execution Guide
+# 📓 Workplace Safety PPE Detection - Notebooks Guide
 
-This directory contains the four core Jupyter notebooks that make up the end-to-end pipeline for the **Workplace Safety PPE Detection System**. 
+This folder contains the end-to-end machine learning pipeline for the **Personal Protective Equipment (PPE) Detection System**. The project is structured into four sequential notebooks that handle everything from data preparation to real-time inference.
 
-## How to Run
+---
 
-You have three options for running this project depending on your hardware and goals.
+## 🚀 Quick Start: How to Run
 
-### **Requirements**
+You have three options to run this project depending on your hardware and goals.
+
+### **System Requirements**
 * **Python**: 3.8 or higher
-* **RAM**: 8GB minimum
-* **GPU**: Recommended for training (CPU works but is very slow)
+* **RAM**: 8GB minimum (16GB recommended)
+* **GPU**: Strongly recommended for training (NVIDIA Tesla T4 or better)
 * **Disk Space**: ~2GB free
 
-### **Dataset**
+### **Dataset Info**
 * **Source**: Construction Site Safety (Roboflow/Kaggle)
-* **Size**: 2,801 images with YOLO format annotations
+* **Size**: 2,801 images
 * **Classes**: 10 (Hardhat, NO-Hardhat, Safety Vest, NO-Safety Vest, Mask, NO-Mask, Person, Safety Cone, Machinery, Vehicle)
 
 ---
 
-### Option A: Run Demo Only (Fastest - 5 minutes)
+### ⚡ Option A: Run Demo Only (Fastest - 5 mins)
 *Use this if you just want to see the model in action without training.*
 
 1.  **Clone the repository**:
@@ -44,7 +46,7 @@ You have three options for running this project depending on your hardware and g
 
 ---
 
-### Option B: Run Full Pipeline (2-3 hours)
+### 🛠️ Option B: Run Full Pipeline (2-3 hours)
 *Use this if you want to train the model from scratch on your local machine.*
 
 1.  **Setup**: Clone repo and install dependencies (as above).
@@ -63,7 +65,7 @@ You have three options for running this project depending on your hardware and g
 
 ---
 
-### Option C: Run on Google Colab (Free GPU)
+### ☁️ Option C: Run on Google Colab (Free GPU)
 *Recommended for fastest training if you don't have a local GPU.*
 
 1.  **Open Google Colab**: Go to [colab.research.google.com](https://colab.research.google.com).
@@ -78,47 +80,56 @@ You have three options for running this project depending on your hardware and g
 
 ---
 
-## In-Depth Notebook Analysis
+## 🧠 In-Depth Notebook Analysis
 
 Here is a detailed technical breakdown of the logic and code within each notebook.
 
 ### **1. `01_data_exploration.ipynb` (Data Prep)**
-This notebook handles the ETL (Extract, Transform, Load) process for the project.
-* **Data Acquisition**: Uses the `kaggle` API to download the "Construction Site Safety" dataset directly into the environment. It handles zip extraction and directory structuring.
-* **Data Cleaning**: Iterates through the raw data to identify corrupted images or label files with missing coordinates.
-* **Stratified Splitting**: Instead of a random split, this implements a **stratified 70/15/15 split**. This ensures that rare classes (like `NO-Hardhat` or `NO-Safety Vest`) are proportionally represented in Training, Validation, and Test sets to prevent class imbalance issues.
-* **YAML Generation**: Automatically generates the `dataset.yaml` file required by YOLOv8, writing absolute paths to the training and validation images.
-* **Visualization**: Uses Matplotlib to plot the distribution of classes (bar charts) and display sample images with bounding boxes to verify annotation integrity.
+This notebook sets the foundation for the project by handling the "Extract, Transform, Load" (ETL) process.
+
+* **What it does:**
+    * **Downloads Data:** Connects to the Kaggle API to fetch the "Construction Site Safety" dataset directly into your environment. It automatically handles unzipping and organizing files.
+    * **Cleans Data:** Scans through all images and labels to find and remove corrupted files or annotations with invalid coordinates.
+    * **Stratified Splitting:** Instead of randomly splitting data (which can lead to imbalance), it uses **stratified sampling**. This ensures that every class (e.g., "NO-Hardhat") is represented equally in Training (70%), Validation (15%), and Test (15%) sets.
+    * **Config Generation:** Automatically creates the `dataset.yaml` file needed by YOLOv8, writing the correct absolute paths for your environment.
+    * **Visualization:** Uses Matplotlib to generate bar charts of class distributions and displays sample images with bounding boxes to verify the data looks correct.
 
 ### **2. `02_model_training.ipynb` (The Engine)**
-This is the core training loop using the Ultralytics YOLOv8 framework.
-* **Model Selection**: Initializes a `yolov8s.pt` (Small) model using transfer learning (pre-trained on COCO). The 'Small' variant was chosen as the optimal trade-off between accuracy (better than Nano) and speed (faster than Medium/Large).
-* **Hyperparameter Tuning**: Configures the training run with specific parameters:
-    * `epochs=200`: High epoch count to ensure convergence.
-    * `patience=50`: Early stopping to prevent overfitting if validation loss plateaus.
-    * `batch=16`: Optimized for standard GPU memory (16GB).
-    * `imgsz=640`: Standard YOLO input resolution.
-* **Augmentation Pipeline**: Implements aggressive data augmentation to improve robustness:
-    * **Mosaic (1.0)**: Stitches 4 images together (forces model to detect small objects).
-    * **Mixup (0.1)**: Blends images to reduce confidence in ambiguous regions.
-    * **Rotation/Flip**: Simulates different camera angles on construction sites.
-* **Artifact Handling**: Automatically saves the best weights (`best.pt`) and training logs (CSV events) to the output directory.
+This is the core of the project where the AI actually learns. We use the Ultralytics YOLOv8 framework.
+
+* **What it does:**
+    * **Model Selection:** Loads the `yolov8s.pt` (Small) model. We chose "Small" because it offers a great balance—it's much more accurate than the "Nano" version but still fast enough to run in real-time on standard hardware.
+    * **Transfer Learning:** We don't start from scratch. We use "pre-trained weights" (from the COCO dataset), so the model already knows what basic shapes look like. We then "fine-tune" it to recognize PPE specifically.
+    * **Hyperparameters:**
+        * `epochs=200`: We train for a long time to ensure maximum accuracy.
+        * `patience=50`: If the model stops improving for 50 epochs, training stops early to save time (Early Stopping).
+        * `batch=16`: Optimized to fill the memory of a standard GPU (16GB) without crashing.
+        * `imgsz=640`: The standard resolution for YOLO models.
+    * **Data Augmentation:** To make the model smarter, we apply random transformations during training:
+        * **Mosaic:** Stitches 4 images together into one. This forces the model to find small objects in complex scenes.
+        * **Mixup:** Blends two images together to help the model handle overlapping objects.
+    * **Saving:** Automatically saves the best performing model as `best.pt`.
 
 ### **3. `03_evaluation.ipynb` (Performance Audit)**
-This notebook acts as the quality assurance phase, validating the model against data it has never seen (the Test set).
-* **Metrics Calculation**: Runs `model.val()` to compute:
-    * **mAP@50** (Mean Average Precision at 50% IoU): The primary metric for detection accuracy.
-    * **Precision & Recall**: To balance false positives vs. missed detections.
-* **Confusion Matrix**: Generates a confusion matrix to visualize which classes are being confused (e.g., is the model confusing "Person" with "Safety Vest"?).
-* **Confidence Analysis**: Runs inference at varying confidence thresholds (0.25, 0.50, 0.75) to determine the optimal deployment threshold.
-* **Per-Class Breakdown**: Outputs a table showing accuracy for *each* specific class (e.g., "How accurately do we detect missing hardhats vs. machinery?").
+This notebook acts as a strict quality control test. It benchmarks the trained model against fresh data it has never seen before (the Test set).
 
-### **4. `04_demo.ipynb` (Deployment & Inference)**
-This notebook simulates the production environment where the model processes raw images and outputs safety reports.
-* **Custom Inference Pipeline**: Defines wrapper functions (`run_inference`) to standardize prediction settings (IoU thresholds, etc.).
-* **Safety Logic (`check_safety_compliance`)**: This is the business logic layer. It iterates through detections to flag specific violations:
-    * If `NO-Hardhat` is detected → **Trigger Alert**.
-    * If `NO-Safety Vest` is detected → **Trigger Alert**.
-    * If `Person` is detected but no PPE → **Cross-reference**.
-* **Visualization Engine**: Uses OpenCV (`cv2`) to draw color-coded bounding boxes and labels (Red for danger/missing PPE, Green for compliance).
-* **Batch Processing**: Demonstrates running the model over a folder of new images and generating a summary report of total violations detected.
+* **What it does:**
+    * **Metrics Calculation:** Runs the official validation script to compute:
+        * **mAP@50 (Mean Average Precision):** The most important score. It measures how accurate the boxes are. A score over 70% is generally considered good for this task.
+        * **Precision vs. Recall:** Checks if the model is too sensitive (too many false alarms) or not sensitive enough (misses real danger).
+    * **Confusion Matrix:** Creates a grid chart showing where the model gets confused (e.g., does it mistake a "Person" for a "Safety Vest"?).
+    * **Confidence Analysis:** Tests the model at different confidence levels (25%, 50%, 75%) to find the "sweet spot" for deployment.
+    * **Per-Class Report:** Generates a table showing exactly how well it detects *each* item. (e.g., "Hardhat detection is 95% accurate, but Gloves are only 60%").
+
+### **4. `04_demo.ipynb` (Real-World Test)**
+This is the deployment simulation. It takes the trained model and applies it to new, raw images to simulate a real security camera feed.
+
+* **What it does:**
+    * **Inference Pipeline:** Defines a function `run_inference()` that standardizes settings like intersection-over-union (IoU) to prevent duplicate boxes.
+    * **Safety Logic:** This is the "business logic" layer. It doesn't just detect objects; it interprets them:
+        * If it sees `NO-Hardhat`, it triggers a **"Safety Violation"** alert.
+        * If it sees `Person` but no PPE, it flags it for review.
+    * **Visualizer:** Uses OpenCV to draw professional bounding boxes.
+        * **Green Boxes:** Safe/Compliant (e.g., "Hardhat", "Vest").
+        * **Red Boxes:** Danger/Violation (e.g., "NO-Hardhat", "NO-Mask").
+    * **Batch Processing:** Shows how to process an entire folder of images at once and generate a final safety report summary.
