@@ -1,10 +1,10 @@
-# 📓 Workplace Safety PPE Detection - Notebooks Guide
+# Workplace Safety PPE Detection - Notebooks Guide
 
 This folder contains the end-to-end machine learning pipeline for the **Personal Protective Equipment (PPE) Detection System**. The project is structured into four sequential notebooks that handle everything from data preparation to real-time inference.
 
 ---
 
-## 🚀 Quick Start: How to Run
+## Quick Start: How to Run
 
 You have three options to run this project depending on your hardware and goals.
 
@@ -21,7 +21,7 @@ You have three options to run this project depending on your hardware and goals.
 
 ---
 
-### ⚡ Option A: Run Demo Only (Fastest - 5 mins)
+### Option A: Run Demo Only (Fastest - 5 mins)
 *Use this if you just want to see the model in action without training.*
 
 1.  **Clone the repository**:
@@ -46,7 +46,7 @@ You have three options to run this project depending on your hardware and goals.
 
 ---
 
-### 🛠️ Option B: Run Full Pipeline (2-3 hours)
+### Option B: Run Full Pipeline (2-3 hours)
 *Use this if you want to train the model from scratch on your local machine.*
 
 1.  **Setup**: Clone repo and install dependencies (as above).
@@ -65,7 +65,7 @@ You have three options to run this project depending on your hardware and goals.
 
 ---
 
-### ☁️ Option C: Run on Google Colab (Free GPU)
+### Option C: Run on Google Colab (Free GPU)
 *Recommended for fastest training if you don't have a local GPU.*
 
 1.  **Open Google Colab**: Go to [colab.research.google.com](https://colab.research.google.com).
@@ -80,7 +80,7 @@ You have three options to run this project depending on your hardware and goals.
 
 ---
 
-## 🧠 In-Depth Notebook Analysis
+## In-Depth Notebook Analysis
 
 Here is a detailed technical breakdown of the logic and code within each notebook.
 
