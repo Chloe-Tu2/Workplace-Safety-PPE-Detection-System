@@ -3,9 +3,11 @@
 ### Success Cases
 
 ![Success Case 1](data/sample/sample_prediction_1.jpg)
+
 *Successful detection of multiple workers with proper PPE (hardhats and safety vests)*
 
 ![Success Case 2](data/sample/sample_prediction_2.jpg)
+
 *Accurate detection of PPE compliance and context objects (machinery, safety cones)*
 
 **Analysis**: The model excels at detecting standard PPE items worn correctly. High precision (88.94%) ensures minimal false alarms, making it reliable for automated safety monitoring.
