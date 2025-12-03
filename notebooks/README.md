@@ -1,6 +1,6 @@
-# Workplace Safety PPE Detection - Notebooks Guide
+# Notebooks Guide
 
-This folder contains the end-to-end machine learning pipeline for the **Personal Protective Equipment (PPE) Detection System**. The project is structured into four sequential notebooks that handle everything from data preparation to real-time inference.
+This folder contains the end-to-end machine learning pipeline for the **Workplace Safety (PPE) Detection System**. The project is structured into four sequential notebooks that handle everything from data preparation to real-time inference.
 
 ---
 
