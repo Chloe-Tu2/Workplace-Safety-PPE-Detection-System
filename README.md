@@ -187,6 +187,7 @@ Workplace-Safety-PPE-Detection-System/
 ├── dataset.yaml                    # YOLO dataset configuration
 │
 ├── notebooks/                      # Jupyter notebooks (run in order)
+│   ├── README.md                   # Notebooks Guide documentation
 │   ├── 01_data_exploration.ipynb   # Dataset download, EDA, stratified split
 │   ├── 02_model_training.ipynb     # YOLOv8 training (200 epochs)
 │   ├── 03_evaluation.ipynb         # Metrics, confusion matrix, failure analysis
@@ -213,6 +214,7 @@ Workplace-Safety-PPE-Detection-System/
 │       └── best.pt                 # Best model (21.4 MB, excluded)
 │
 ├── results/                        # Training outputs & visualizations
+│   ├── README.md                   # Model Results & Performance Analysis documentation
 │   ├── metrics.txt                 # Performance metrics
 │   ├── evaluation_report_comprehensive.txt  # Detailed evaluation
 │   ├── training_metrics.csv        # Training history
@@ -229,6 +231,7 @@ Workplace-Safety-PPE-Detection-System/
 │       └── BoxR_curve.png
 │
 └── docs/                           # Documentation
+    ├── README.md                   # Presentation & Files Project Documentation
     ├── AI_USAGE_LOG.md             # Detailed AI assistance log
     └── MD_DemarcusCrump_ChloeTu-ITAI1378.pdf  # Midterm sildes PDF version
     ├── MD_DemarcusCrump_ChloeTu-ITAI1378.pptx # Midterm sildes Powerpoint pptx version
