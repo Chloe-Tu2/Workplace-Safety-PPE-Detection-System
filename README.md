@@ -187,7 +187,7 @@ Workplace-Safety-PPE-Detection-System/
 ├── dataset.yaml                    # YOLO dataset configuration
 │
 ├── notebooks/                      # Jupyter notebooks (run in order)
-│   ├── README.md                   # Notebooks Guide documentation
+│   ├── README.md                   # Notebooks Overview Guide documentation
 │   ├── 01_data_exploration.ipynb   # Dataset download, EDA, stratified split
 │   ├── 02_model_training.ipynb     # YOLOv8 training (200 epochs)
 │   ├── 03_evaluation.ipynb         # Metrics, confusion matrix, failure analysis
