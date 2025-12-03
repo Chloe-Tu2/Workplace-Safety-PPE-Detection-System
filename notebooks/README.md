@@ -1,4 +1,4 @@
-# Notebooks Guide
+# Notebooks Overview Guide
 
 This folder contains the end-to-end machine learning pipeline for the **Workplace Safety (PPE) Detection System**. The project is structured into four sequential notebooks that handle everything from data preparation to real-time inference.
 
