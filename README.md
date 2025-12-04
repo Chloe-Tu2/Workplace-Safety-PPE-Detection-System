@@ -458,7 +458,7 @@ While the model performs well overall, it occasionally struggles with:
 
 ## Demo Video
 
-**Video Link**: 
+**Video Link**: https://drive.google.com/file/d/1QHEQ7IYajlBU72rhOfs_92o6vn67VkYZ/view
 
 **Contents** (5 minutes):
 - Live demonstration of PPE detection on sample images
