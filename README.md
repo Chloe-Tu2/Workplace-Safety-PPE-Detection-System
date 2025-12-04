@@ -450,9 +450,13 @@ While the model performs well overall, it occasionally struggles with:
 
 ---
 
+## Presentation video 
+
+**Video Link**: https://drive.google.com/file/d/1YPWR3AU4nUncAwEaot6_WY_KOfKmFsEL/view
+
 ## Demo Video
 
-**Video Link**: [YouTube Demo Video - Coming Soon]
+**Video Link**: 
 
 **Contents** (3-5 minutes):
 - Live demonstration of PPE detection on sample images
@@ -460,11 +464,7 @@ While the model performs well overall, it occasionally struggles with:
 - Real-time inference showcase
 - Explanation of model predictions and confidence scores
 - Safety compliance analysis
-
-## Presentation video 
-
-**Video Link**: https://drive.google.com/file/d/1YPWR3AU4nUncAwEaot6_WY_KOfKmFsEL/view
-
+- 
 ---
 
 ## Key Learnings
