@@ -454,17 +454,19 @@ While the model performs well overall, it occasionally struggles with:
 
 **Video Link**: https://drive.google.com/file/d/1YPWR3AU4nUncAwEaot6_WY_KOfKmFsEL/view
 
+**Contents** (10 minutes):
+
 ## Demo Video
 
 **Video Link**: 
 
-**Contents** (3-5 minutes):
+**Contents** (5 minutes):
 - Live demonstration of PPE detection on sample images
 - Batch processing of construction site images
 - Real-time inference showcase
 - Explanation of model predictions and confidence scores
 - Safety compliance analysis
-- 
+
 ---
 
 ## Key Learnings
