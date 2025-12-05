@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory contains the dataset used for training and evaluating the PPE Detection System. The full dataset is not included in this repository due to size constraints, but sample images are provided for demonstration purposes.
+This directory contains the dataset used for training and evaluating the **Workplace Safety PPE Detection System**. The full dataset is not included in this repository due to size constraints, but sample images are provided for demonstration purposes.
 
 ## Dataset Information
 
