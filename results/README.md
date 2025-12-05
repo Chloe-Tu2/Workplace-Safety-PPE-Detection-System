@@ -10,6 +10,7 @@ This directory contains the comprehensive performance data, evaluation metrics, 
 * **`evaluation_report_comprehensive.txt`**: A deep-dive textual analysis including per-class breakdowns and deployment recommendations.
 * **`visualizations/`**: Generated charts and plots (Confusion Matrix, PR Curves) created during training and evaluation.
 * **`images/`**: Sample predictions showing the model detecting PPE on unseen test images.
+* **`External Images (Unseen Data)/`**: Test the model's generalization ability by running it on completely new construction site images that were NOT part of our training, validation, or test sets. 
 
 ---
 
@@ -72,7 +73,7 @@ This section explains the charts generated in the `visualizations/` subfolder.
 
 ---
 
-## 4. External Testing (Unseen Data)
+## External Testing (Unseen Data)
 
 This section showcases results from **Notebook 04 (Demo)**, where we tested the model on images sourced from the internet that were **not** part of the Kaggle dataset. This tests the model's **"Generalization"**—its ability to work in the real world, not just on the test quiz.
 
