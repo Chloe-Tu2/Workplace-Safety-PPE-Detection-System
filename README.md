@@ -210,7 +210,6 @@ Workplace-Safety-PPE-Detection-System/
 │   ├── pretrained/                 # Base models (excluded from repo)
 │   │   └── .gitkeep
 │   └── trained/                    # Trained checkpoints (excluded from repo)
-│       ├── .gitkeep
 │       └── best.pt                 # Best model (21.4 MB, excluded)
 │
 ├── results/                        # Training outputs & visualizations
@@ -218,17 +217,21 @@ Workplace-Safety-PPE-Detection-System/
 │   ├── metrics.txt                 # Performance metrics
 │   ├── evaluation_report_comprehensive.txt  # Detailed evaluation
 │   ├── training_metrics.csv        # Training history
+│   ├── External Images(Unseen Data)/  # Testing the model on Unseen Data not from the kaggle set
+│   │   ├── external_test_1.jpg
+│   │   ├── external_test_1.jpg
+│   │   └── external_test_1.jpg 
 │   ├── images/                     # Training visualization images
 │   │   ├── train_batch0.jpg
 │   │   └── val_batch0_pred.jpg
 │   └── visualizations/             # Evaluation charts
-│       ├── confusion_matrix.png
-│       ├── confusion_matrix_normalized.png
-│       ├── results.png
 │       ├── BoxF1_curve.png
 │       ├── BoxPR_curve.png
 │       ├── BoxP_curve.png
-│       └── BoxR_curve.png
+│       ├── BoxR_curve.png
+│       ├── confusion_matrix.png
+│       ├── confusion_matrix_normalized.png
+│       └──  results.png
 │
 └── docs/                           # Documentation
     ├── README.md                   # Presentation & Files Project Documentation
