@@ -1,8 +1,6 @@
 # Project Documentation & Presentation Files
 
-This folder contains the official documentation, presentation slides, and transparency logs for the **Workplace Safety PPE Detection System**.
-
-Below is a detailed breakdown of the four core files located in this directory.
+This folder contains the official documentation, presentation slides, download video and transparency logs for the **Workplace Safety PPE Detection System**. Below is a detailed breakdown of the four core files located in this directory.
 
 ---
 
