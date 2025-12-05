@@ -457,18 +457,23 @@ While the model performs well overall, it occasionally struggles with:
 
 **Video Link**: https://drive.google.com/file/d/1YPWR3AU4nUncAwEaot6_WY_KOfKmFsEL/view
 
-**Contents** (10 minutes):
-
+**Contents** (12 minutes):
+- **Problem Statement & Motivation:** Overview of construction safety risks and the necessity for automated PPE monitoring.
+- **Technical Architecture:** Explanation of the YOLOv8 Small model structure, including CSPDarknet backbone and PAN neck architecture.
+- **Data Strategy:** Breakdown of dataset preprocessing, class balancing, and advanced augmentation techniques like mosaic and mixup.
+- **Performance Metrics:** Analysis of key results, including 77.1% mAP@50, 88.9% precision, and 66 FPS real-time processing speed.
+- **Success & Failure Analysis:** Evaluation of model performance on specific classes (e.g., masks) and limitations regarding small objects and occlusion.
+  
 ## Demo Video
 
 **Video Link**: https://drive.google.com/file/d/1QHEQ7IYajlBU72rhOfs_92o6vn67VkYZ/view
 
-**Contents** (5 minutes):
-- Live demonstration of PPE detection on sample images
-- Batch processing of construction site images
-- Real-time inference showcase
-- Explanation of model predictions and confidence scores
-- Safety compliance analysis
+**Contents** (10 minutes):
+- **Pipeline Setup:** Demonstration of mounting the drive, loading the model, and initializing utility functions for inference.
+- **Batch Processing:** Execution of batch inference on 423 test images to demonstrate large-scale processing capabilities.
+- **Interactive Inference:** Live single-image testing showing side-by-side visualizations of compliant workers vs. safety violations.
+- **Real-World Generalization:** Bonus testing on external construction site images not found in the training data to prove deployment readiness.
+- **Safety Compliance Reporting:** Showcase of the automated violation summary generation and CSV reporting features.
 
 ---
 
