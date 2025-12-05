@@ -33,7 +33,6 @@ results/
     ├── confusion_matrix.png
     ├── confusion_matrix_normalized.png
     └──  results.png
-
 ```
 
 ---
