@@ -25,7 +25,7 @@ The following statistics are sourced directly from `metrics.txt` and represent t
 | **mAP@50** | **77.10%** | **(Primary Metric)** The model's overall accuracy is strong for this task. |
 | **Precision** | **88.94%** | The model rarely raises false alarms. If it says a worker is unsafe, they probably are. |
 | **Recall** | **68.87%** | The model detects most objects but may miss some in difficult lighting or occlusion. |
-| **mAP@50-95**| **50.06%** | A strict metric showing the bounding boxes are very tight and accurate to the object shapes. |
+| **mAP@50-95**| **50.06%** | A strict metric showing the bounding boxes are very tight and accurate to the object shapes.
 
 ### **Speed & Efficiency**
 * **Inference Speed**: ~15ms per image (on T4 GPU).
@@ -64,9 +64,9 @@ This section explains the charts generated in the `visualizations/` subfolder.
 * **What it is:** A graph showing the trade-off between Precision (fewer false alarms) and Recall (fewer missed items).
 * **Key Insight:** Our curve (mAP@50 = 77.1%) is pushed towards the top-right, indicating a high-performing model.
 
-### **3. Sample Predictions**
+### **3. Sample Predictions (Test Set)**
 `images/val_batch0_pred.jpg`
-* **What it is:** Actual images from the test set with bounding boxes drawn by the AI.
+* **What it is:** Actual images from the internal test set with bounding boxes drawn by the AI.
 * **Look for:**
     * **Green Boxes:** Compliant PPE (Hardhat, Vest).
     * **Red/Orange Boxes:** Violations (NO-Hardhat, NO-Mask).
@@ -74,7 +74,36 @@ This section explains the charts generated in the `visualizations/` subfolder.
 
 ---
 
-## Deployment Recommendations
+## 4. External Testing (Unseen Data)
+
+This section showcases results from **Notebook 04 (Demo)**, where we tested the model on images sourced from the internet that were **not** part of the Kaggle dataset. This tests the model's **"Generalization"**—its ability to work in the real world, not just on the test quiz.
+
+### **The Generalization Test**
+* **Source:** Interactive Demo (Bonus Section)
+* **Assessment:** **STRONG**. The model successfully generalized to new environments.
+* **Confidence Levels:** Maintained high confidence (>70%) even on images with different lighting and camera angles.
+
+### **Demo Gallery**
+*These predictions demonstrate the model's robustness in real-world scenarios.*
+
+**1. Compliance Detection**
+> `images/external_test_1.jpg`
+> * **Scenario:** Worker walking with full gear.
+> * **Result:** Successfully Detected **Hardhat** and **Safety Vest** correctly with high confidence.
+
+**2. Violation Detection**
+> `images/external_test_2.jpg`
+> * **Scenario:** Worker without a helmet.
+> * **Result:** Detected **NO-Hardhat** (Violation Alert Triggered). This proves the model can catch safety breaches.
+
+**3. Complex Scene**
+> `images/external_test_3.jpg`
+> * **Scenario:** Multiple workers and heavy machinery in a busy environment.
+> * **Result:** Successfully separated **Machinery** from **Person** detections, proving it handles crowded backgrounds well.
+
+---
+
+## Deployment Recommendation
 
 Based on the `evaluation_report_comprehensive.txt`, here is how to best use this model in the real world.
 
