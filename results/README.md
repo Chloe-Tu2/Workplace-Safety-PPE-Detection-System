@@ -12,6 +12,30 @@ This directory contains the comprehensive performance data, evaluation metrics, 
 * **`images/`**: Sample predictions showing the model detecting PPE on unseen test images.
 * **`External Images (Unseen Data)/`**: Test the model's generalization ability by running it on completely new construction site images that were NOT part of our training, validation, or test sets. 
 
+```
+results/
+├── README.md                   # Model Results & Performance Analysis documentation
+├── metrics.txt                 # Performance metrics
+├── evaluation_report_comprehensive.txt  # Detailed evaluation
+├── training_metrics.csv        # Training history
+├── External Images(Unseen Data)/  # Testing the model on Unseen Data not from the kaggle set
+│   ├── external_test_1.jpg
+│   ├── external_test_1.jpg
+│   └── external_test_1.jpg        
+├── images/                     # Training visualization images
+│   ├── train_batch0.jpg
+│   └── val_batch0_pred.jpg         
+├── Visulaizations/             # Evaluation charts
+    ├── BoxF1_curve.png
+    ├── BoxPR_curve.png
+    ├── BoxP_curve.png
+    ├── BoxR_curve.png
+    ├── confusion_matrix.png
+    ├── confusion_matrix_normalized.png
+    └──  results.png
+
+```
+
 ---
 
 ## Key Performance Metrics
