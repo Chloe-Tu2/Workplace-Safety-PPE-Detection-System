@@ -8,6 +8,7 @@ This directory contains the comprehensive performance data, evaluation metrics, 
 
 * **`metrics.txt`**: A concise summary of top-level KPIs (Key Performance Indicators).
 * **`evaluation_report_comprehensive.txt`**: A deep-dive textual analysis including per-class breakdowns and deployment recommendations.
+* **`training_metrics.csv`**: Full CSV Training history chart (rows and columns)
 * **`visualizations/`**: Generated charts and plots (Confusion Matrix, PR Curves) created during training and evaluation.
 * **`images/`**: Sample predictions showing the model detecting PPE on unseen test images.
 * **`External Images (Unseen Data)/`**: Test the model's generalization ability by running it on completely new construction site images that were NOT part of our training, validation, or test sets. 
