@@ -19,7 +19,7 @@ results/
 ├── metrics.txt                 # Performance metrics
 ├── evaluation_report_comprehensive.txt  # Detailed evaluation
 ├── training_metrics.csv        # Training history
-├── External Images(Unseen Data)/  # Testing the model on Unseen Data not from the kaggle set
+├── external images(unseen data)/  # Testing the model on Unseen Data not from the kaggle set
 │   ├── external_test_1.jpg
 │   ├── external_test_1.jpg
 │   └── external_test_1.jpg        
