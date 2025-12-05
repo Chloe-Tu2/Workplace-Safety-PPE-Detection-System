@@ -10,7 +10,7 @@ notebooks/
 ├── 02_model_training.ipynb    # YOLOv8 training (200 epochs)
 ├── 03_evaluation.ipynb        # Metrics, confusion matrix, failure analysis
 ├── 04_demo.ipynb              # Interactive demo, model export
-└── README.md                  # This file
+└── README.md                  # Notebooks Overview Guide documentation
 ```
 
 ---
