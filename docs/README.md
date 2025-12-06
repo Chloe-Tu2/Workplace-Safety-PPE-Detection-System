@@ -1,12 +1,12 @@
 # Project Documentation & Resources
 
-This directory contains the official documentation, presentation slides, download video, and transparency logs for the Workplace Safety PPE Detection System. Below is a detailed breakdown of the four core files located in this directory.
+This directory contains the official documentation, presentation slides, download video, and transparency logs for the **Workplace Safety PPE Detection System**. 
 
-## 📂 Repository Organization
+## Repository Organization
 
 The documentation is organized into two primary folders to separate the Midterm progress from the Final deliverables.
 
-```text
+```
 ├── Final/
 │   ├── Final_DemarcusCrump_ChloeTu__ITAI1378.pdf
 │   ├── Final_DemarcusCrump_ChloeTu__ITAI1378.pptx
@@ -21,9 +21,9 @@ The documentation is organized into two primary folders to separate the Midterm 
 └── AI_USAGE_LOG.md
 ```
 
-## 📁 1. Final Project Materials (/Final)
+## 1. Final Project Materials (/Final)
 
-This folder contains the complete deliverables for the final submission of the project (December 3, 2025).
+This folder serves as the central hub for the final submission deliverables, containing the presentation deck in all accessible formats (PDF, PPTX), the raw text script, and the live demonstration video.
 
 ### **Final_DemarcusCrump_ChloeTu__ITAI1378.pdf**
 
@@ -43,7 +43,7 @@ This folder contains the complete deliverables for the final submission of the p
 
 **Description:** The editable source file for the final class presentation.
 
-**Note:** This version includes original slide transitions, animations, and editable charts that are flattened in the PDF version.
+**Note:** This is a distinct version from the PDF. While the content matches, the layout rendering may differ depending on your local version of PowerPoint. This file includes the original slide transitions, animations, and editable charts that are flattened in the PDF version . It is intended for presenting or editing the slide deck.
 
 ---
 
@@ -53,7 +53,7 @@ This folder contains the complete deliverables for the final submission of the p
 
 **Description:** A raw transcript of the final presentation.
 
-**Content:** Contains the script, bullet points, and speaker notes for all 12 slides—serving as the source of truth for the presentation content.
+**Content:** This file contains the script, bullet points, and speaker notes for all 12 slides. It serves as the "source of truth" for the presentation content and is formatted for accessibility, allowing you to review textual data (such as the specific confusion matrix data on Slide 7) without opening the visual slide deck.
 
 ---
 
@@ -64,23 +64,25 @@ This folder contains the complete deliverables for the final submission of the p
 **Description:** A comprehensive 10-minute video walkthrough of our interactive notebook (`04_demo.ipynb`).
 
 **Content Includes:**
-- Model Loading: Initializing the YOLOv8s model (11.2M params)
-- Batch Inference: Processing 423 test images in real-time
-- External Image Tests: Demonstrating generalization
-- Deployment: Exporting the model to ONNX and TorchScript formats
+- **Model Loading:** Mounting Google Drive and initializing the YOLOv8s model (11.2M parameters).
+- **Batch Inference:** Processing 423 test images in real-time to generate compliance statistics.
+- **Interactive Demo:** Testing the model on external images (not in the training dataset) to prove generalization, showing bounding boxes for "Hardhat," "Vest," and "No-Mask" violations.
+- **Deployment:** Exporting the model to ONNX and TorchScript formats for varying deployment environments.
 
 ---
 
-## 📁 2. Midterm Project Materials (/Midterm)
+## 2. Midterm Project Materials (/Midterm)
 
-This folder contains the proposal and progress report materials submitted during the midterm phase (October 30, 2025).
+This folder contains the complete set of midterm proposal materials, provided in all necessary presentation formats (PDF, PPTX) along with the corresponding text transcript.
 
 ### **MD_DemarcusCrump_ChloeTu-ITAI1378.pdf**
 
 **File Type:** PDF Document  
 **Description:** Static 10-slide midterm proposal.
 
-**Content:** Includes initial project scope, dataset selection, system diagram, and the week-by-week development plan.
+**Content:** This document outlines the initial project scope, including the selection of the "Construction Site Safety" dataset, the proposed system diagram, and the week-by-week development plan.
+
+**Viewing Instruction:** Please open this file directly in GitHub for the most reliable viewing experience without formatting errors.
 
 ---
 
@@ -88,12 +90,9 @@ This folder contains the proposal and progress report materials submitted during
 
 **File Type:** PowerPoint Presentation
 
-**Description:** Editable source file for the midterm presentation.
+**Description:** The source PowerPoint file for the midterm presentation.
 
-**Details:**  
-- Marks the project as "Tier 2" (Medium Difficulty)  
-- Includes editable tables for Success Metrics (Slide 7)  
-- Includes Challenges & Backup Plans (Slide 9), such as augmentation for occluded PPE  
+**Details:** Clearly marks the project as "Tier 2" (Medium Difficulty) and includes editable tables for "Success Metrics" (Slide 7) and "Challenges & Backup Plans" (Slide 9), detailing mitigation strategies like aggressive augmentation for occluded PPE .
 
 ---
 
@@ -101,39 +100,37 @@ This folder contains the proposal and progress report materials submitted during
 
 **File Type:** Markdown Script
 
-**Description:** Text transcript of the midterm proposal.
+**Description:** The Markdown text transcript of the midterm proposal.
 
 **Details Covered:**  
-- Problem: $1 billion per week cost of workplace injuries  
-- Technical Stack: $0 cost using Google Colab + Kaggle  
-- Risk Management: Backup plans (e.g., YOLOv8-medium fallback)  
+- **Problem:** $1 billion per week cost of workplace injuries  
+- **Technical Stack:** Explaining the $0 cost using Google Colab and Kaggle  
+- **Risk Management:** Listing specific backup plans, such as using YOLOv8-medium if accuracy targets were missed .
 
 ---
 
-## 🤖 AI Usage & Transparency
+## AI Usage & Transparency
 
 ### **AI_USAGE_LOG.md**
 
 **File Type:** Markdown Documentation  
 **Purpose:** Academic Integrity, Transparency Report & Code Attribution
 
-**Description:** A detailed transparency log documenting AI usage throughout the semester.
+**Description:** A detailed transparency log documenting our collaboration with AI tools throughout the semester.
 
 ### **The “Human First” Workflow**
-**We researched → AI explained → We decided → AI helped implement**
+The log explicitly details our workflow:**We researched → AI explained → We decided → AI helped implement**. AI was use as a learning accelerator, never to replace human decision-making.
 
 ### **Tools Used**
 - **ChatGPT-4:** Researching model variants & debugging  
 - **Claude:** Fixing Google Drive persistence  
-- **GitHub Copilot:** Boilerplate visualization code  
+- **GitHub Copilot:** Generating boilerplate visualization code.
 
 ### **Code Attribution Breakdown**
-- Dataset Preprocessing: ~30% AI-assisted  
-- Model Training: ~40% AI-assisted  
-- Evaluation: ~50% AI-assisted  
-- Documentation: ~60% AI-assisted  
-- **Overall:** ~40% AI-generated, ~60% human-written  
+- **Dataset Preprocessing:** ~30% AI-assisted (Logic for stratified splitting).
+- **Model Training:** ~40% AI-assisted (Configuration and training loops).
+- **Evaluation:** ~50% AI-assisted (Confusion matrices and metrics). 
+- **Documentation:** ~60% AI-assisted (Formatting and technical writing).
+- **Overall:** Approximately 40% of the codebase was generated with AI assistance, while 60% was written independently by the team.
 
 ---
-
-All content above is formatted and ready for use as a GitHub `README.md`.
