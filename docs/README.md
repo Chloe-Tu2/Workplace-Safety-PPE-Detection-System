@@ -25,7 +25,7 @@ The documentation is organized into two primary folders to separate the Midterm 
 
 This folder serves as the central hub for the final submission deliverables, containing the presentation deck in all accessible formats (PDF, PPTX), the raw text script, and the live demonstration video.
 
-### `Final_DemarcusCrump_ChloeTu__ITAI1378.pdf`
+## `Final_DemarcusCrump_ChloeTu__ITAI1378.pdf`
 
 **File Type:** PDF Document (Portable / Read-Only)
 
