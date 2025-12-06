@@ -25,7 +25,7 @@ The documentation is organized into two primary folders to separate the Midterm 
 
 This folder serves as the central hub for the final submission deliverables, containing the presentation deck in all accessible formats (PDF, PPTX), the raw text script, and the live demonstration video.
 
-### **Final_DemarcusCrump_ChloeTu__ITAI1378.pdf**
+### `Final_DemarcusCrump_ChloeTu__ITAI1378.pdf`
 
 **File Type:** PDF Document (Portable / Read-Only)
 
@@ -37,7 +37,7 @@ This folder serves as the central hub for the final submission deliverables, con
 
 ---
 
-### **Final_DemarcusCrump_ChloeTu__ITAI1378.pptx**
+### `Final_DemarcusCrump_ChloeTu__ITAI1378.pptx`
 
 **File Type:** PowerPoint Presentation (Source File)
 
@@ -47,7 +47,7 @@ This folder serves as the central hub for the final submission deliverables, con
 
 ---
 
-### **Final-PPE-12-Slide-Presentation-Text.md**
+### `Final-PPE-12-Slide-Presentation-Text.md`
 
 **File Type:** Markdown Script
 
@@ -57,7 +57,7 @@ This folder serves as the central hub for the final submission deliverables, con
 
 ---
 
-### **PPE-Demo-Video.mp4**
+### `PPE-Demo-Video.mp4`
 
 **File Type:** Video File (MP4)
 
@@ -75,7 +75,7 @@ This folder serves as the central hub for the final submission deliverables, con
 
 This folder contains the complete set of midterm proposal materials, provided in all necessary presentation formats (PDF, PPTX) along with the corresponding text transcript.
 
-### **MD_DemarcusCrump_ChloeTu-ITAI1378.pdf**
+### `MD_DemarcusCrump_ChloeTu-ITAI1378.pdf`
 
 **File Type:** PDF Document  
 **Description:** Static 10-slide midterm proposal.
@@ -86,7 +86,7 @@ This folder contains the complete set of midterm proposal materials, provided in
 
 ---
 
-### **MD_DemarcusCrump_ChloeTu__ITAI1378.pptx**
+### `MD_DemarcusCrump_ChloeTu__ITAI1378.pptx`
 
 **File Type:** PowerPoint Presentation
 
@@ -96,7 +96,7 @@ This folder contains the complete set of midterm proposal materials, provided in
 
 ---
 
-### **MD-PPE-10-Slide-Presentation-Text.md**
+### `MD-PPE-10-Slide-Presentation-Text.md`
 
 **File Type:** Markdown Script
 
@@ -111,7 +111,7 @@ This folder contains the complete set of midterm proposal materials, provided in
 
 ## AI Usage & Transparency
 
-### **AI_USAGE_LOG.md**
+### `AI_USAGE_LOG.md`
 
 **File Type:** Markdown Documentation  
 **Purpose:** Academic Integrity, Transparency Report & Code Attribution
