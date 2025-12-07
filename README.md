@@ -234,11 +234,20 @@ Workplace-Safety-PPE-Detection-System/
 │       └──  results.png
 │
 └── docs/                           # Documentation
+    ├── Final/
+    │   ├── Final_DemarcusCrump_ChloeTu__ITAI1378.pdf   # Final sildes PDF version
+    │   ├── Final_DemarcusCrump_ChloeTu__ITAI1378.pptx  # Final sildes Powerpoint pptx version
+    │   ├── Final-PPE-12-Slide-Presentation-Text.md  # Text word format Final Presentation slides
+    │   └── PPE-Demo-Video.mp4
+    │
+    ├── Midterm/
+    │   ├── MD_DemarcusCrump_ChloeTu-ITAI1378.pdf  # Midterm sildes PDF version
+    │   ├── MD_DemarcusCrump_ChloeTu__ITAI1378.pptx # Midterm sildes Powerpoint pptx version
+    │   └── MD-PPE-10-Slide-Presentation-Text.md   # Text word format Midterm Presentation slides
+    │
     ├── README.md                   # Presentation & Files Project Documentation
-    ├── AI_USAGE_LOG.md             # Detailed AI assistance log
-    └── MD_DemarcusCrump_ChloeTu-ITAI1378.pdf  # Midterm sildes PDF version
-    ├── MD_DemarcusCrump_ChloeTu-ITAI1378.pptx # Midterm sildes Powerpoint pptx version
-    └── PPE-10-Slide-Presentation-Text.md  # Text word format Presentation slides
+    └── AI_USAGE_LOG.md             # Detailed AI assistance log
+
 ```
 
 **Note**: Large files (full dataset, model weights) are excluded from this repository via `.gitignore`. Download instructions provided in respective README files.
