@@ -12,7 +12,7 @@ This directory contains the dataset used for training and evaluating the **Workp
 **Format**: YOLO format (images + text annotations)  
 **License**: Public dataset (check Kaggle for specific license terms)
 
-## Dataset Structure
+## `data/` Directory Structure
 
 ```
 data/
