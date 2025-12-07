@@ -2,7 +2,7 @@
 
 This directory contains the official documentation, presentation slides, download video, and transparency logs for the **Workplace Safety PPE Detection System**. 
 
-## Repository Organization
+## `docs/` Directory Structure
 
 The documentation is organized into two primary folders to separate the Midterm progress from the Final deliverables.
 
