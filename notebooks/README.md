@@ -2,7 +2,7 @@
 
 This directory contains the four core Jupyter notebooks that make up the end-to-end pipeline for the **Workplace Safety PPE Detection System**. These notebooks handle everything from downloading the raw data to running the final safety demo.
 
-## Dataset Structure
+## `notebooks/` Directory Structure
 
 ```
 notebooks/
