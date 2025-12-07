@@ -2,7 +2,7 @@
 
 This directory contains information about the pretrained and trained models used in this project.
 
-## Directory Structure
+## `models/` Directory Structure
 
 ```
 models/
