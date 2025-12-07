@@ -7,7 +7,7 @@ This directory contains the official documentation, presentation slides, downloa
 The documentation is organized into two primary folders to separate the Midterm progress from the Final deliverables.
 
 ```
-└── docs/ 
+docs/ 
     ├── Final/
     │   ├── Final_DemarcusCrump_ChloeTu__ITAI1378.pdf   # Final sildes PDF version
     │   ├── Final_DemarcusCrump_ChloeTu__ITAI1378.pptx  # Final sildes Powerpoint pptx version
