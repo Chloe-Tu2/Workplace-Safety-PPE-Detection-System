@@ -1,11 +1,13 @@
 # PPE Detection System - Construction Site Safety
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![PyTorch](https://img.shields.io/badge/framework-PyTorch-orange.svg)
-![YOLOv8](https://img.shields.io/badge/model-YOLOv8s-blueviolet.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![PyTorch](https://img.shields.io/badge/Framework-PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/Model-YOLOv8s-blueviolet)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-complete-success.svg)
-![mAP](https://img.shields.io/badge/mAP@50-77.1%25-brightgreen.svg)
+![Inference](https://img.shields.io/badge/Inference-66_FPS-success)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![mAP](https://img.shields.io/badge/mAP@50-77.1%25-brightgreen)
+![Colab](https://img.shields.io/badge/Platform-Google_Colab-F9AB00?logo=googlecolab&logoColor=white)
 
 > An AI-powered computer vision system for automated workplace safety monitoring
 
